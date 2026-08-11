@@ -7,6 +7,8 @@
 
 body{
     line-height:1.6;
+    opacity: 1;
+    transition: opacity 0.2s ease;
 }
 
 nav{
@@ -202,4 +204,103 @@ input:focus, textarea:focus{
 
 .footer-socials a:hover {
     color: white;
+}
+
+/*   Mobile Nav Toggle */
+.nav-toggle{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    gap:5px;
+}
+
+.nav-toggle span{
+    display:block;
+    width:25px;
+    height:3px;
+    background:white;
+    border-radius:3px;
+}
+
+/*  Tablet (max 768px)   */
+@media (max-width: 768px) {
+
+    nav{
+        flex-wrap:wrap;
+        padding:15px 5%;
+        position:relative;
+    }
+
+    .nav-toggle{
+        display:flex;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:15px;
+    }
+
+    nav ul.open{
+        display:flex;
+    }
+
+    nav ul li{
+        margin:10px 0;
+        margin-left:0;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .reasons{
+        grid-template-columns:1fr;
+    }
+
+    .services,
+    .why-us,
+    .testimonials{
+        padding:60px 5%;
+    }
+
+    .stats{
+        padding:50px 5%;
+    }
+}
+
+/*  Mobile max 480px*/
+@media (max-width: 480px) {
+
+    .hero h1{
+        font-size:26px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin:8px 0;
+    }
+
+    .stat-box h2{
+        font-size:30px;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    .service-container{
+        grid-template-columns:1fr;
+    }
 }
