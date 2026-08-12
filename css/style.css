@@ -304,3 +304,37 @@ input:focus, textarea:focus{
         grid-template-columns:1fr;
     }
 }
+.services {
+    padding: 80px 10%;
+    background: #f1f5f9;
+}
+
+.why-us {
+    padding: 80px 10%;
+    background: #ffffff;
+}
+
+.testimonials {
+    padding: 80px 10%;
+    background: #1e293b;
+    color: white;
+}
+
+.testimonials h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials .card {
+    background: #2d3f55;
+    color: white;
+}
+
+.testimonials .card h4 {
+    color: #60a5fa;
+}
+
+.testimonials .card p {
+    color: #e2e8f0;
+}
