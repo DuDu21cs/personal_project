@@ -2,16 +2,19 @@
 
 A multi-page business consultancy website built with **HTML, CSS, and PHP**. Designed for a professional consultancy firm offering strategic business advisory, financial planning, startup support, and capacity-building services.
 
-> ⚠️ This project is currently in progress — more features and content will be added soon.
-
 ---
 
 ## 🚀 Features
 
-- Multi-page layout (Home, About, Services, Industries, Case Studies, Contact)
+- Multi-page layout (Home, About, Services, Industries, Case Studies, Blog, Contact)
+- Hero section with image background and dark overlay
 - Services showcase with card-based layout
-- Contact page with PHP & MySQL backend
-- Clean and professional UI
+- Alternating section backgrounds for visual depth
+- Client testimonials section
+- Business stats section (100+ businesses advised, 95% satisfaction)
+- Functional contact form with **PHP & MySQL** backend
+- Social media links in footer
+- Mobile responsive layout with hamburger menu
 
 ---
 
@@ -29,15 +32,18 @@ A multi-page business consultancy website built with **HTML, CSS, and PHP**. Des
 ```
 empire-consultancy/
 ├── config/
-│   └── db.php          # Database connection
+│   └── db.php              # Database connection
 ├── css/
-│   └── style.css       # Main stylesheet
-├── home.html           # Home page
-├── about.html          # About page
-├── services.html       # Services page
-├── industries.html     # Industries page
-├── case-studies.html   # Case Studies page
-└── contact.html        # Contact page
+│   └── style.css           # Main stylesheet (responsive)
+├── images/
+│   └── hero-bg.jpg         # Hero section background image
+├── home.html               # Home page
+├── about.html              # About page
+├── services.html           # Services page
+├── industries.html         # Industries page
+├── case-studies.html       # Case Studies page
+├── blog.html               # Blog page
+└── contact.php             # Contact page with form submission
 ```
 
 ---
@@ -48,10 +54,24 @@ empire-consultancy/
    ```bash
    git clone https://github.com/DuDu21cs/personal_project.git
    ```
-2. Move the project folder to your XAMPP `htdocs` directory
+2. Move the project folder to your XAMPP `htdocs` directory:
+   ```
+   C:\xampp\htdocs\empire-consultancy\
+   ```
 3. Start **Apache** and **MySQL** in XAMPP
-4. Create a database named `empire_consultancy` in phpMyAdmin
-5. Open your browser and go to:
+4. Open **phpMyAdmin** at `http://localhost/phpmyadmin` and create a database named `empire_consultancy`
+5. Run this SQL to create the contacts table:
+   ```sql
+   CREATE TABLE contacts (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       name VARCHAR(100) NOT NULL,
+       email VARCHAR(100) NOT NULL,
+       subject VARCHAR(150),
+       message TEXT NOT NULL,
+       submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
+   ```
+6. Open your browser and go to:
    ```
    http://localhost/empire-consultancy/home.html
    ```
