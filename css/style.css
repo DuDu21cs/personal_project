@@ -40,7 +40,7 @@ nav ul li a{
 }
 
 .hero{
-   background: linear-gradient(rgba(15, 23, 42, 0.75),rgba(15, 23, 42, 0.75)), url('/images/hero.JPJ') center center / cover no-repeat;
+   background: linear-gradient(rgba(15, 23, 42, 0.75),rgba(15, 23, 42, 0.75)), url('../images/hero.jpg') center center / cover no-repeat;
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -138,12 +138,7 @@ nav ul li a:hover{
     color: #0f172a;
 }
 
-.hero{
-    background:linear-gradient(
-        rgba(15,23,42,0.9),
-        rgba(30,41,59,0.9)
-    );
-}
+
 
 .card ul{
     margin-top:15px;
