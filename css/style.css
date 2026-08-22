@@ -349,3 +349,8 @@ input:focus, textarea:focus{
 .hero-image {
     background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('../images/hero.jpg') center center / cover no-repeat;
 }
+.why-us .service-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: auto;
+}
