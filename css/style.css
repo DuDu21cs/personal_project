@@ -354,3 +354,38 @@ input:focus, textarea:focus{
     max-width: 900px;
     margin: auto;
 }
+
+nav ul li a.active {
+    color: #60a5fa;
+    border-bottom: 2px solid #60a5fa;
+    padding-bottom: 3px;
+}
+.cta {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta .btn {
+    background: white;
+    color: #2563eb;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.cta .btn:hover {
+    background: transparent;
+    color: white;
+}
