@@ -3,8 +3,11 @@
     padding:0;
     box-sizing:border-box;
     font-family:Arial, sans-serif;
+    
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     line-height:1.6;
     opacity: 1;
